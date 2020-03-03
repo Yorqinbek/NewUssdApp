@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     tools:context=".HomeActivity">
-
-    
-
     <RelativeLayout
         android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="@+id/leftguid2"
