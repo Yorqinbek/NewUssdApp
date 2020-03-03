@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".HomeActivity">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@+id/leftguid2"
+        app:layout_constraintRight_toRightOf="@+id/rightguid"
+        app:layout_constraintTop_toTopOf="@+id/bottomguidbalans"
+        app:layout_constraintBottom_toBottomOf="@+id/topguid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints">
+        <com.synnapps.carouselview.CarouselView
+            app:indicatorVisibility="invisible"
+            android:id="@+id/carouselView"
+            app:indicatorGravity="bottom|right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fillColor="#FFFFFFFF"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@+id/leftguid2"
+        app:layout_constraintRight_toRightOf="@+id/rightguid"
+        app:layout_constraintTop_toTopOf="@+id/topguidtop"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomguidbalans"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/main_header"
+        android:background="@drawable/perfectum_white_grey_border_bottom"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/mobi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfectum"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tekshirish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/nvdr"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+        <!--<ImageView
+            android:id="@+id/news"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu_yangi"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>-->
+
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            tools:ignore="DisableBaselineAlignment,NotSibling,RtlHardcoded">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:id="@+id/text_balance"
+                    android:layout_gravity="center"/>
+
+
+                <Button
+                    android:id="@+id/mb_call"
+                    android:padding="5dp"
+                    android:layout_height="35dp"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:text="MB"
+                    android:textColor="@color/perfectum" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:id="@+id/text_minut"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/balans_call"
+                    android:padding="5dp"
+                    android:layout_height="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white"
+                    android:text="Balans"
+                    android:textColor="@color/perfectum" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:id="@+id/text_traffik"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/daqiqa_call"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:layout_height="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:text="Daqiqa"
+                    android:textColor="@color/perfectum" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomguid"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/alert"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/alert"
+            android:src="@drawable/alert2" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/alert"
+            android:src="@drawable/nastroy" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintRight_toRightOf="@+id/rightguid"
+        app:layout_constraintLeft_toLeftOf="@+id/leftguid"
+        app:layout_constraintTop_toTopOf="@+id/topguid"
+        app:layout_constraintBottom_toBottomOf="@+id/topguid2">
+
+        <LinearLayout
+            android:elevation="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ussd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@id/topguid2"
+            android:background="@drawable/shape_one"
+            app:layout_constraintBottom_toBottomOf="@+id/bottomguid"
+            app:layout_constraintLeft_toLeftOf="@+id/leftguid"
+            app:layout_constraintRight_toRightOf="@+id/rightguid"
+            app:layout_constraintTop_toTopOf="@+id/topguid2"
+            tools:ignore="NotSibling,UnusedAttribute"
+            android:orientation="horizontal" >
+            <ImageView
+                android:backgroundTint="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:src="@drawable/internet_perfectum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="7"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="Internet paket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="@+id/rightguid"
+        app:layout_constraintLeft_toLeftOf="@+id/leftguid"
+        app:layout_constraintBottom_toBottomOf="@+id/topguid3"
+        app:layout_constraintTop_toTopOf="@+id/topguid2"
+        android:background="@drawable/shape_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling"
+        android:orientation="horizontal" >
+        <ImageView
+            android:backgroundTint="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:src="@drawable/tarif"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="6"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Tariflar rejalari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="@+id/rightguid"
+        app:layout_constraintLeft_toLeftOf="@+id/leftguid"
+        app:layout_constraintBottom_toBottomOf="@+id/topguid4"
+        app:layout_constraintTop_toTopOf="@+id/topguid3"
+        android:background="@drawable/shape_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling"
+        android:orientation="horizontal" >
+        <ImageView
+            android:backgroundTint="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:src="@drawable/daqiqa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Daqiqa paketlar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="@+id/rightguid"
+        app:layout_constraintLeft_toLeftOf="@+id/leftguid"
+        app:layout_constraintBottom_toBottomOf="@+id/topguid5"
+        app:layout_constraintTop_toTopOf="@+id/topguid4"
+        android:background="@drawable/shape_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling"
+        android:orientation="horizontal" >
+        <ImageView
+            android:backgroundTint="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:src="@drawable/sms"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="7"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Sms paketlar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="@+id/rightguid"
+        app:layout_constraintLeft_toLeftOf="@+id/leftguid"
+        app:layout_constraintBottom_toBottomOf="@+id/topguid6"
+        app:layout_constraintTop_toTopOf="@+id/topguid5"
+        android:background="@drawable/shape_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling"
+        android:orientation="horizontal" >
+        <ImageView
+            android:backgroundTint="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:src="@drawable/xizmat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Xizmatlar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="@+id/rightguid"
+        app:layout_constraintLeft_toLeftOf="@+id/leftguid"
+        app:layout_constraintBottom_toBottomOf="@+id/topguid7"
+        app:layout_constraintTop_toTopOf="@+id/topguid6"
+        android:background="@drawable/shape_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling"
+        android:orientation="horizontal" >
+        <ImageView
+            android:backgroundTint="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:src="@drawable/ussd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="8"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Ussd kodlar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftguid"
+        app:layout_constraintGuide_percent="0.35"
+        android:orientation="vertical"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftguid2"
+        app:layout_constraintGuide_percent="0"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightguid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguidbalans"
+        app:layout_constraintGuide_percent="0.09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomguidbalans"
+        app:layout_constraintGuide_percent="0.20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguid"
+        app:layout_constraintGuide_percent="0.30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguidtop"
+        app:layout_constraintGuide_percent="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguid2"
+        app:layout_constraintGuide_percent="0.40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguid4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguid5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguid6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topguid7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomguid"
+        app:layout_constraintGuide_percent="0.89"
+        android:orientation="horizontal"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

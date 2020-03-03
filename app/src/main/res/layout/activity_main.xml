@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_above="@id/tillar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/operator_rasm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_button" />
+        <TextView
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="mobiuz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+        <TextView
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:text="Tilni tanlang:"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tillar"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:id="@+id/rusrel"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+           <!-- <ImageView
+                android:clickable="true"
+                android:id="@+id/rusrasm"
+                android:layout_margin="20dp"
+                android:src="@drawable/russion"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:focusable="true" />-->
+
+            <Button
+                android:background="?attr/selectableItemBackground"
+                android:padding="15dp"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_centerInParent="true"
+                android:id="@+id/rustil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Русский"
+                android:textSize="20dp"
+                android:focusable="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/rusrel"
+            android:id="@+id/uzbrel"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+            <!--<ImageView
+                android:id="@+id/uzbrasm"
+                android:layout_margin="20dp"
+                android:src="@drawable/uzb"
+                android:layout_width="150px"
+                android:layout_height="150px" />-->
+
+            <Button
+                android:padding="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_centerInParent="true"
+                android:id="@+id/uzbtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="O`zbek"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/uzbrel"
+            android:id="@+id/kirrel"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+            <!--<ImageView
+                android:id="@+id/kirrasm"
+                android:layout_margin="20dp"
+                android:src="@drawable/uzb"
+                android:layout_width="150px"
+                android:layout_height="150px" />-->
+
+            <Button
+                android:padding="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_centerInParent="true"
+                android:id="@+id/kirtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Ўзбекча"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
